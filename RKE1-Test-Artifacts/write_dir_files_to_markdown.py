@@ -12,7 +12,7 @@ def main():
             if pic != 'write_dir_files_to_markdown.py' and pic != 'README.md':
                 readme.write('\n')
                 sntzepic = pic.replace(' ', '\\ ')
-                mrkdwnpic = (f'![{pic}]({sntzepic})')
+                mrkdwnpic = (f'![{pic}]({pic}?raw=true)')
                 readme.write(mrkdwnpic)
                 readme.write('\n')
 
