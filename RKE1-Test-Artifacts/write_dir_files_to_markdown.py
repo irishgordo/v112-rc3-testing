@@ -1,5 +1,6 @@
 import os
 
+# https://raw.githubusercontent.com/irishgordo/v112-rc3-testing/main/RKE1-Test-Artifacts/32.png
 def main():
     pictures = os.listdir()
     try:
@@ -12,7 +13,7 @@ def main():
             if pic != 'write_dir_files_to_markdown.py' and pic != 'README.md':
                 readme.write('\n')
                 sntzepic = pic.replace(' ', '\\ ')
-                mrkdwnpic = (f'![{pic}](https://raw.githubusercontent.com/irishgordo/v112-rc3-testing/tree/main/RKE1-Test-Artifacts/{pic}?raw=true)')
+                mrkdwnpic = (f'![{pic}](https://raw.githubusercontent.com/irishgordo/v112-rc3-testing/main/RKE1-Test-Artifacts/{pic})')
                 readme.write(mrkdwnpic)
                 readme.write('\n')
 
